@@ -1,3 +1,6 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
+const batteryBatches = [1, 2, 3, 4, 5, 16];
 
-// Code your solution here
+const countBatteries = (totalAmt, batteryBatch) => totalAmt + batteryBatch;
+
+const totalBatteries = batteryBatches.reduce(countBatteries, 0) 
+
